@@ -72,7 +72,7 @@ Her block element yeni satir yaratir. Inlinelar block icinde kullanilabilir ve s
 
 inline elemnts ornekler
 
-1. <a> 
-2. <img>
-3. <button>
-4. <span> → texting spesifik bir kismini ozellestirmeye yarar
+1. a
+2. img
+3. button
+4. span → texting spesifik bir kismini ozellestirmeye yarar
