@@ -1,0 +1,22 @@
+img{
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+}
+body{
+  text-align: center;
+  background-color: rgb(233, 215, 207);
+  margin: 50px;
+}
+
+#todays-challenge {
+  color: rgb(6, 18, 150);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Oswald";
+}
+#catch {
+  font-size: 20px;
+  font-family: "Fira Sans";
+}
+
