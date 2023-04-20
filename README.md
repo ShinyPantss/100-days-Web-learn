@@ -76,3 +76,19 @@ inline elemnts ornekler
 2. img
 3. button
 4. span → texting spesifik bir kismini ozellestirmeye yarar
+
+# Day 8
+
+- Inline elemnentlerin ustunde margin calismiyor. Buraya eklenen margin veya padding diger elementleri kaydirmiyor. Block elementlerde kaydirir.
+- Bu durumu display kullanarak cozeriz. Inline - block  propertsi il
+- inline elementsler replace and unreplace olarai ayriliyor. replace olanlar dikeyde marginden etkileniyor
+
+## Margin Collapse
+
+Eger iki blok elementin de margini var ise buyuk olan margin kazanir. Ancak display uygulanmis inline elementlerde boyle bir durum soz konusu degildir. 
+
+### Box Shadow Property
+
+Golge eklemimizi saglar. ( x , y , kalinlik , yayginlik)
+
+- Bir Challenge tamamladim. Negatif margin kullanmayi ogrendim. Ayrica span kullanimini da ogrendim bu projeden

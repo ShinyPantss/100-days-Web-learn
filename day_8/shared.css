@@ -1,0 +1,30 @@
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+  }
+  body{
+    text-align: center;
+    background-color: rgb(233, 215, 207);
+    margin: 50px;
+  }
+  p {
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+  }
+  h1 {
+    font-family: sans serif;
+    text-align: center;
+    color: rgb(165, 77, 0);
+    font-size: 40px;
+  }
+  a {
+    color: rgb(167, 1, 78);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+ 
