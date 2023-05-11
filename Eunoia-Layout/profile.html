@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@200&display=swap"
+    />
     <title>Elif Tak(@eliftak)/Eunoia</title>
   </head>
   <body>
@@ -26,7 +30,7 @@
         <div id="img_contact">
           <img src="ocean.jpg" alt="profile" />
           <div id="profile_info">
-            <p>Elif Tak</p>
+            <p>Mucahit Can</p>
             <p>Contact:</p>
             <p>aa@gmail.com</p>
           </div>
@@ -56,18 +60,21 @@
           <h2>New Post</h2>
           <form action="">
             <textarea
+              id="write_post"
               name="new_post"
-              id="new_post"
               cols="50"
               rows="10"
               placeholder="Write your post here..."
+              style="resize: none"
             ></textarea>
+            <a href="">Post</a>
           </form>
         </div>
-        <div id="My_Posts">
-          <div>
-            <h2>My Activities</h2>
-          </div>
+        <div>
+          <h2>My Activities</h2>
+        </div>
+        <div id="posts"></div>
+        <div class="post_card">
           <ul id="my_posts_list">
             <li class="post_type">
               <div id="photo_name">
@@ -76,6 +83,15 @@
               </div>
               <p>Bugun ilk defa kurek cektim, inanilmaz bir deneyimdi.</p>
               <img src="/Eunoia-Layout/ocean.jpg" alt="" />
+
+              <div id="post_buttons">
+                <div>
+                  <p>Comment</p>
+                </div>
+                <div>
+                  <p>Like</p>
+                </div>
+              </div>
             </li>
             <li>
               <!-- <img src="/Eunoia-Layout/3.jpg" alt="" /> -->
@@ -85,4 +101,52 @@
       </section>
     </main>
   </body>
+  <script>
+    const posts = [
+      {
+        id: 1,
+        username: "Mucahit Can",
+        postContent: "Bugun ilk defa kurek cektim, inanilmaz bir deneyimdi.",
+        userAvatar:
+          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      },
+      {
+        id: 1,
+        username: "Mucahit Can",
+        postContent: "Bugun ilk defa kurek cektim, inanilmaz bir deneyimdi.",
+        userAvatar:
+          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      },
+      // Add more posts here
+    ];
+
+    const postsContainer = document.getElementById("posts");
+
+    posts.forEach((post) => {
+      const postHtml = `
+    <div class="post_card">
+      <ul id="my_posts_list">
+        <li class="post_type">
+          <div id="photo_name">
+            <img src="${post.userAvatar}" alt="${post.username}" />
+            <p>${post.username}</p>
+          </div>
+          <p>${post.postContent}</p>
+          <img src="/Eunoia-Layout/ocean.jpg" alt="" />
+
+          <div id="post_buttons">
+            <div>
+              <p>Comment</p>
+            </div>
+            <div>
+              <p>Like</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  `;
+      postsContainer.insertAdjacentHTML("beforeend", postHtml);
+    });
+  </script>
 </html>

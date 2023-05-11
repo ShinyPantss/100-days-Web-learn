@@ -1,17 +1,35 @@
 #main_flow {
-  width: 500px;
-  height: 5000px;
+  width: 600px;
   border: 5px solid #003459;
+  border-radius: 10px;
+  align-items: center;
 }
 #new_Post {
   text-align: center;
 }
-#My_Posts {
-  width: 400px;
+.post_card {
+  width: 500px;
   height: 500px;
   border: 3px solid #003459;
   margin: auto;
   margin-top: 30px;
+  border-radius: 10px;
+}
+#write_post {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  box-shadow: 1px 2px 8px 1px rgb(6, 24, 44, 4);
+  border-radius: 5px;
+}
+form a {
+  text-decoration: none;
+  color: rgb(187, 178, 178);
+  position: relative;
+  padding: 5px 15px;
+  background-color: rgb(119, 119, 126);
+  right: 100px;
+  bottom: 30px;
 }
 
 #My_Posts h2 {
@@ -33,13 +51,42 @@
 
 #photo_name {
   display: flex;
-  max-width: 40%;
-  justify-content: space-between;
+  max-width: 80%;
+  justify-content: flex-start;
   margin-bottom: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
+.post_type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .post_type img {
-  height: 200px;
+  height: 150px;
   width: 90%;
   object-fit: cover;
+  margin: 5px 5px;
+}
+
+#post_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  margin: auto;
+}
+#post_buttons p {
+  padding: 10px 75px;
+  width: 50px;
+  background-color: aliceblue;
+}
+
+#post_buttons p:hover {
+  background-color: antiquewhite;
 }

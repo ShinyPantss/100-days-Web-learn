@@ -111,8 +111,27 @@ main {
 }
 
 .input-nav-bar-username {
-  margin: auto;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.input-nav-bar-username img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto 15px;
+  border: 0.5px solid rgb(255, 255, 255);
+
+  color: #fff;
+}
+.input-nav-bar-username h3 {
+  font-size: 25px;
+  margin-top: 8px;
+  font-weight: 50px;
+  font-family: "Kanit", sans-serif;
 }
 .text {
   margin: auto;

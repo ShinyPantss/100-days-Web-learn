@@ -1,6 +1,9 @@
 html {
   background-color: rgb(240, 239, 236);
 }
+body {
+  font-family: "Kanit", sans-serif;
+}
 header {
   background-color: #003459;
   display: flex;
@@ -20,7 +23,7 @@ header {
   text-decoration: none;
   padding: 10px;
   font-family: "Oleo Script", sans-serif;
-  color: rgb(245, 243, 160);
+  color: rgb(206, 192, 192);
   font-size: 50px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
