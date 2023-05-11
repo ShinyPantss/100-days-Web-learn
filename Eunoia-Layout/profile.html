@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="profile/Styling/Header.css" />
+    <link rel="stylesheet" href="profile/Styling/main_flow.css" />
+    <link rel="stylesheet" href="profile/Styling/User.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -48,12 +50,33 @@
       </section>
 
       <section id="main_flow">
+        <div id="new_Post">
+          <h2>New Post</h2>
+          <form action="">
+            <textarea
+              name="new_post"
+              id="new_post"
+              cols="50"
+              rows="10"
+              placeholder="Write your post here..."
+            ></textarea>
+          </form>
+        </div>
         <div id="My_Posts">
-          <h2>My Posts</h2>
+          <div>
+            <h2>My Activities</h2>
+          </div>
           <ul id="my_posts_list">
+            <li class="post_type">
+              <div id="photo_name">
+                <img src="/Eunoia-Layout/3.jpg" alt="my" />
+                <p>Mucahit Can</p>
+              </div>
+              <p>Bugun ilk defa kurek cektim, inanilmaz bir deneyimdi.</p>
+              <img src="/Eunoia-Layout/ocean.jpg" alt="" />
+            </li>
             <li>
-              <img id="lo" rc="ocean.jpg" alt="post" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <!-- <img src="/Eunoia-Layout/3.jpg" alt="" /> -->
             </li>
           </ul>
         </div>

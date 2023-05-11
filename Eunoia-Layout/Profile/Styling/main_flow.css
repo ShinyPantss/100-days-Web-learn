@@ -1,0 +1,45 @@
+#main_flow {
+  width: 500px;
+  height: 5000px;
+  border: 5px solid #003459;
+}
+#new_Post {
+  text-align: center;
+}
+#My_Posts {
+  width: 400px;
+  height: 500px;
+  border: 3px solid #003459;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#My_Posts h2 {
+  text-align: center;
+  font-size: 35px;
+  color: darkolivegreen;
+  border-bottom: 1px solid black;
+}
+
+#my_posts_list {
+  list-style: none;
+}
+#photo_name img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#photo_name {
+  display: flex;
+  max-width: 40%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.post_type img {
+  height: 200px;
+  width: 90%;
+  object-fit: cover;
+}
