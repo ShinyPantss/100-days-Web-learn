@@ -1,6 +1,6 @@
 #hero {
   height: 800px;
-  background-image: url("ocean.jpg");
+  background-image: url("/day_12-15/images/cities/ocean.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -53,27 +53,46 @@ section ul p {
   left: 5px;
   top: -5px;
 }
+
 section h2 {
   text-align: center;
   font-size: 40px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  margin: 0;
-  padding: 50px 0px;
+  margin: 12px;
+  padding: 30px 0px;
 }
 #destinations {
   display: flex;
   width: 90%;
-  margin: auto;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .destination {
   margin: 0 20px;
+  text-transform: uppercase;
+}
+
+.destination p {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(124, 123, 123);
+  margin: 20px 0px;
 }
 .destination img {
   height: 200px;
-  width: 300px;
+  width: 400px;
   box-shadow: 2px 2px 4px rgb(68, 67, 67);
   border-radius: 10px;
   object-fit: cover;
+}
+
+strong {
+  color: rgb(0, 160, 117);
+}
+#highlight {
+  padding: 24px;
+  background: linear-gradient(180deg, rgb(277, 255, 253), rgb(202, 243, 240));
 }
