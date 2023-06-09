@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="challenge.css">
+    <title>Forms Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="/day_25-28/own_challenge/challenge.html" method="Get">
+
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+
+            <li>
+                <label for="user-name">Your Name</label>
+                <input type="text" name="username" id="user-name" required /> 
+            </li>
+            <li>
+                <label for="user_email">Your E-Mail Address</label>
+                <input type="email" name="user-email" id="user_email" required />
+            </li>
+            <li>   
+                <label for="usernumber">Your Phone Number</label>
+                <input type="tel" name="user-number" id="usernumber" required minlength="11"/>
+
+            </li>
+            <li>
+
+                    <label for="user_message">Your Name</label>
+                    <textarea name="usermessage" id="user_message" cols="30" rows="10" maxlength="200"></textarea>
+
+            </li>
+          </ul>
+          
+
+        </section>
+    
+        <div id="selection">
+            <label for="user-find">How did you find us?</label>
+        <select name="user-find" id="user-find">
+          
+          <option value="web">Web Search</option>
+          <option value="friend">Friend</option>
+          <option value="social media">Social Media</option>
+        </select>
+            
+        </div>
+        
+
+
+        <section>
+            <h2>How should we reply?</h2>
+            <ul>
+                <li class="flex-radio">
+                    <input type="radio" name="reply" id="reply-email" value="email" required/>
+                    <label for="reply-email">Call Me</label>
+                </li>
+                <li class="flex-radio">
+                    <input type="radio" name="reply" id="reply-phone" value="phone" required />
+                    <label for="reply-phone">Send me an email</label>
+                </li>
+                <li class="flex-radio">
+                    <input type="radio" name="reply" id="reply-post" value="post"  required/>
+                    <label for="reply-post">Don't reply</label>
+                </li>
+        </section>
+
+        <section class="flex-radio">
+            <div class="checkbox-container">
+
+                <input type="checkbox" name="accept-terms"id="Accept" required>
+                <label for="Accept">Accept Terms</label>
+            </div>
+            
+        </section>
+        <div class="button-container">
+
+            <button class="reset-button" type="reset">Clear</button>
+            <button class="submit-button">Submit</button>
+
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
