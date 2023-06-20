@@ -12,9 +12,7 @@ function retrieveUserInput(event) {
     inputNumber.textContent = number +"/60";
 
     
-    console.log(entered);
-    console.log(event);  
-    console.log(number);
+   i
 
     return entered;
 }  
